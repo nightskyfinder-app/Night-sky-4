@@ -312,10 +312,11 @@ nav.toc a { text-decoration:none; }
 <h2 id="planes">Planes</h2>
 <p>Turn on <strong>Planes</strong> in Layers to see live aircraft as small blue plane shapes pointing the way they're flying, labeled with their flight number (and altitude when you zoom in). Tap one for its altitude, speed, heading, aircraft type and registration, plus a link to a live flight map.</p>
 <p>Planes show live only, so they're hidden while you time travel. While the layer is on, the app asks for planes in your area every 10 seconds.</p>
+<p><strong>Already set up on this site.</strong> Version 4 has its plane relay built in, so turning on Planes is all you need to do. The steps below are for anyone running their own copy of the app, or if the relay ever needs replacing.</p>
 <p><strong>One-time setup.</strong> Free flight-data services don't accept requests straight from a web page, so planes go through a tiny free relay that you set up once on Cloudflare. It takes about 10 minutes and doesn't need a credit card.</p>
 <ol>
 <li>Go to <strong>dash.cloudflare.com</strong> and sign up for a free account.</li>
-<li>In the menu on the left, open <strong>Workers &amp; Pages</strong> (it may be under <strong>Compute</strong>), then choose <strong>Create</strong>, then <strong>Create Worker</strong> (or "Start with Hello World").</li>
+<li>In the menu on the left, open <strong>Workers &amp; Pages</strong> (it may be under <strong>Compute</strong>), then choose <strong>Create application</strong> and, on the Workers side, <strong>Start with Hello World!</strong> (older menus say Create, then Create Worker).</li>
 <li>Name it something like <strong>night-sky-planes</strong> and click <strong>Deploy</strong>.</li>
 <li>Click <strong>Edit code</strong>. Delete everything in the code box, then paste in the whole contents of <strong>plane-relay.js</strong> from this project. Click <strong>Deploy</strong> again.</li>
 <li>Copy the Worker's address. It looks like <code>https://night-sky-planes.yourname.workers.dev</code>.</li>

@@ -1,6 +1,6 @@
 // Night Sky Finder offline support: keeps the app and its data on the phone so it opens with no signal.
 // Bump CACHE on every release (night-sky-4-v8, night-sky-4-v9, ...) so phones pick up the update.
-const CACHE = "night-sky-4-v8";
+const CACHE = "night-sky-4-v9";
 const PHOTOS = "night-sky-photos"; // photos from Wikimedia, kept for offline use (the newest 120)
 const SHELL = ["./", "index.html", "astronomy.browser.min.js", "satellite.js", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png", "guide.html", "screen-map.png"];
 // Older versions of the app (night-sky-2 and night-sky-3, caches night-sky-v4 and night-sky-v7) live on the same

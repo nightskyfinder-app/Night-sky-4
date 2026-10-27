@@ -273,10 +273,12 @@ Turn on **Planes** in Layers to see live aircraft as small blue plane shapes poi
 
 Planes show live only, so they're hidden while you time travel. While the layer is on, the app asks for planes in your area every 10 seconds.
 
+**Already set up on this site.** Version 4 has its plane relay built in, so turning on Planes is all you need to do. The steps below are for anyone running their own copy of the app, or if the relay ever needs replacing.
+
 **One-time setup.** Free flight-data services don't accept requests straight from a web page, so planes go through a tiny free relay that you set up once on Cloudflare. It takes about 10 minutes and doesn't need a credit card.
 
 1. Go to **dash.cloudflare.com** and sign up for a free account.
-2. In the menu on the left, open **Workers & Pages** (it may be under **Compute**), then choose **Create**, then **Create Worker** (or "Start with Hello World").
+2. In the menu on the left, open **Workers & Pages** (it may be under **Compute**), then choose **Create application** and, on the Workers side, **Start with Hello World!** (older menus say Create, then Create Worker).
 3. Name it something like **night-sky-planes** and click **Deploy**.
 4. Click **Edit code**. Delete everything in the code box, then paste in the whole contents of **plane-relay.js** from this project. Click **Deploy** again.
 5. Copy the Worker's address. It looks like `https://night-sky-planes.yourname.workers.dev`.
